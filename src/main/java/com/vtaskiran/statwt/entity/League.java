@@ -22,10 +22,7 @@ public class League {
 
     @Column(name = "country")
     private String country;
-    
-    @Column(name = "founded_year")
-    private long   foundedYear;
-    
+        
     @Column(name = "icon_path")
     private String iconPath;
 }
