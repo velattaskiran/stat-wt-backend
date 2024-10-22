@@ -9,20 +9,18 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "leagues")
-public class League {
+@Table(name = "teams")
+public class Team {
 
     @Id
-    @Column(name = "league_id")
+    @Column(name = "team_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "league_name", nullable = false)
+    @Column(name = "team_name", nullable = false)
     private String name;
-
-    @Column(name = "country")
-    private String country;
         
     @Column(name = "logo_url")
     private String logoUrl;
+
 }
